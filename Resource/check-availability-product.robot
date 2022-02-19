@@ -15,7 +15,7 @@ ${VisibleMobile}    xpath://p[text()='گوشی موبایل اپل']
 ${SmsChecked}       id:notification-param-2
 ${NPMessage}        name:sendNotification
 ${ClickPage}        xpath://a[text()='۲']
-${SCROLL_HIEGHT}    2000
+${SCROLL_HIEGHT}    1500
 
 ***Keywords***
 Select Product

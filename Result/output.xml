@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220219 07:55:56.575" rpa="false" schemaversion="2">
-<suite id="s1" name="Availability-Product" source="E:\FinalProjectGithub\Digikala\Testcase\check-availability-product\availability-product.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220219 09:20:48.176" rpa="false" schemaversion="2">
+<suite id="s1" name="Availability-Product" source="E:\UI\Digikala\Testcase\check-availability-product\availability-product.robot">
 <kw name="Valid Login" library="Login-Resource" type="SETUP">
 <kw name="Open Page" library="Login-Resource">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${SPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220219 07:55:56.884" endtime="20220219 07:55:56.884"/>
+<status status="PASS" starttime="20220219 09:20:48.430" endtime="20220219 09:20:48.430"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220219 07:55:56.884" endtime="20220219 07:55:56.884"/>
+<status status="PASS" starttime="20220219 09:20:48.430" endtime="20220219 09:20:48.430"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220219 07:55:56.884" level="INFO">Opening browser 'ff' to base url 'https://www.digikala.com'.</msg>
-<msg timestamp="20220219 07:55:56.892" level="INFO">Firefox driver log is always forced to to: E:\FinalProjectGithub\Digikala\Result\geckodriver-99.log</msg>
-<status status="PASS" starttime="20220219 07:55:56.884" endtime="20220219 07:58:04.819"/>
+<msg timestamp="20220219 09:20:48.430" level="INFO">Opening browser 'ff' to base url 'https://www.digikala.com'.</msg>
+<msg timestamp="20220219 09:20:48.432" level="INFO">Firefox driver log is always forced to to: E:\UI\Digikala\Result\geckodriver-5.log</msg>
+<status status="PASS" starttime="20220219 09:20:48.430" endtime="20220219 09:21:01.072"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220219 07:58:04.828" endtime="20220219 07:58:05.116"/>
+<status status="PASS" starttime="20220219 09:21:01.072" endtime="20220219 09:21:01.427"/>
 </kw>
-<status status="PASS" starttime="20220219 07:55:56.876" endtime="20220219 07:58:05.117"/>
+<status status="PASS" starttime="20220219 09:20:48.429" endtime="20220219 09:21:01.430"/>
 </kw>
 <kw name="Login" library="Login-Resource">
 <arg>${USERNAME}</arg>
@@ -33,103 +33,103 @@
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ClickLogin}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:05.121" endtime="20220219 07:58:05.505"/>
+<status status="PASS" starttime="20220219 09:21:01.436" endtime="20220219 09:21:03.171"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ClickLogin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:05.505" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/a/div[2]'.</msg>
-<status status="PASS" starttime="20220219 07:58:05.505" endtime="20220219 07:58:06.609"/>
+<msg timestamp="20220219 09:21:03.171" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/a/div[2]'.</msg>
+<status status="PASS" starttime="20220219 09:21:03.171" endtime="20220219 09:21:03.570"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${UserID}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:06.609" endtime="20220219 07:58:06.645"/>
+<status status="PASS" starttime="20220219 09:21:03.570" endtime="20220219 09:21:04.934"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${UserID}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220219 07:58:06.646" endtime="20220219 07:58:06.665"/>
+<status status="PASS" starttime="20220219 09:21:04.934" endtime="20220219 09:21:04.968"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${UserID}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:06.668" level="INFO">Typing text '09122445315' into text field 'name:username'.</msg>
-<status status="PASS" starttime="20220219 07:58:06.667" endtime="20220219 07:58:06.826"/>
+<msg timestamp="20220219 09:21:04.972" level="INFO">Typing text '09122445315' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20220219 09:21:04.971" endtime="20220219 09:21:05.299"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${SubmitUser}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:06.827" level="INFO">Clicking button 'xpath://*[@id="__next"]/main/div[2]/form/button'.</msg>
-<status status="PASS" starttime="20220219 07:58:06.826" endtime="20220219 07:58:07.110"/>
+<msg timestamp="20220219 09:21:05.300" level="INFO">Clicking button 'xpath://*[@id="__next"]/main/div[2]/form/button'.</msg>
+<status status="PASS" starttime="20220219 09:21:05.299" endtime="20220219 09:21:05.710"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PassID}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:07.110" endtime="20220219 07:58:07.150"/>
+<status status="PASS" starttime="20220219 09:21:05.711" endtime="20220219 09:21:06.376"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PassID}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:07.152" level="INFO">Typing text '3180312' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20220219 07:58:07.151" endtime="20220219 07:58:07.219"/>
+<msg timestamp="20220219 09:21:06.376" level="INFO">Typing text '3180312' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20220219 09:21:06.376" endtime="20220219 09:21:06.409"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${SubmitPass}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:07.220" level="INFO">Clicking button 'xpath://*[@id="__next"]/main/div[2]/form/button[3]'.</msg>
-<status status="PASS" starttime="20220219 07:58:07.219" endtime="20220219 07:58:07.516"/>
+<msg timestamp="20220219 09:21:06.410" level="INFO">Clicking button 'xpath://*[@id="__next"]/main/div[2]/form/button[3]'.</msg>
+<status status="PASS" starttime="20220219 09:21:06.410" endtime="20220219 09:21:06.659"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Profile}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:07.517" endtime="20220219 07:58:10.404"/>
+<status status="PASS" starttime="20220219 09:21:06.660" endtime="20220219 09:21:09.275"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Profile}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:10.406" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20220219 07:58:10.405" endtime="20220219 07:58:13.766"/>
+<msg timestamp="20220219 09:21:09.275" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20220219 09:21:09.275" endtime="20220219 09:21:12.764"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Order}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:13.766" endtime="20220219 07:58:14.573"/>
+<status status="PASS" starttime="20220219 09:21:12.765" endtime="20220219 09:21:14.488"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Profile}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:14.573" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20220219 07:58:14.573" endtime="20220219 07:58:14.972"/>
+<msg timestamp="20220219 09:21:14.488" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/div/div/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20220219 09:21:14.488" endtime="20220219 09:21:14.794"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:05.118" endtime="20220219 07:58:14.972"/>
+<status status="PASS" starttime="20220219 09:21:01.431" endtime="20220219 09:21:14.794"/>
 </kw>
-<status status="PASS" starttime="20220219 07:55:56.876" endtime="20220219 07:58:14.975"/>
+<status status="PASS" starttime="20220219 09:20:48.429" endtime="20220219 09:21:14.794"/>
 </kw>
 <test id="s1-t1" name="Available Product">
 <kw name="Select Product" library="check-availability-product">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Product}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:15.016" endtime="20220219 07:58:15.802"/>
+<status status="PASS" starttime="20220219 09:21:14.804" endtime="20220219 09:21:15.726"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Product}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:15.803" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div'.</msg>
-<status status="PASS" starttime="20220219 07:58:15.802" endtime="20220219 07:58:16.100"/>
+<msg timestamp="20220219 09:21:15.727" level="INFO">Clicking element 'xpath://*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div'.</msg>
+<status status="PASS" starttime="20220219 09:21:15.726" endtime="20220219 09:21:16.161"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Digital}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:16.100" endtime="20220219 07:58:16.133"/>
+<status status="PASS" starttime="20220219 09:21:16.164" endtime="20220219 09:21:16.270"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${Apple}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220219 07:58:16.133" endtime="20220219 07:58:16.165"/>
+<status status="PASS" starttime="20220219 09:21:16.270" endtime="20220219 09:21:16.281"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>10s</arg>
@@ -140,28 +140,28 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Apple}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:16.172" level="INFO">Clicking element 'xpath://span[text()='اپل']'.</msg>
-<status status="PASS" starttime="20220219 07:58:16.172" endtime="20220219 07:58:17.393"/>
+<msg timestamp="20220219 09:21:16.287" level="INFO">Clicking element 'xpath://span[text()='اپل']'.</msg>
+<status status="PASS" starttime="20220219 09:21:16.286" endtime="20220219 09:21:19.358"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:16.171" endtime="20220219 07:58:17.394"/>
+<status status="PASS" starttime="20220219 09:21:16.285" endtime="20220219 09:21:19.359"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:16.165" endtime="20220219 07:58:17.395"/>
+<status status="PASS" starttime="20220219 09:21:16.282" endtime="20220219 09:21:19.359"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Filters}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:17.396" endtime="20220219 07:58:17.434"/>
+<status status="PASS" starttime="20220219 09:21:19.359" endtime="20220219 09:21:19.844"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${BestSelling}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:17.435" level="INFO">Clicking element 'xpath://div[text()='پرفروش‌ترین‌']'.</msg>
-<status status="PASS" starttime="20220219 07:58:17.434" endtime="20220219 07:58:17.890"/>
+<msg timestamp="20220219 09:21:19.845" level="INFO">Clicking element 'xpath://div[text()='پرفروش‌ترین‌']'.</msg>
+<status status="PASS" starttime="20220219 09:21:19.844" endtime="20220219 09:21:20.501"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Filters}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:17.890" endtime="20220219 07:58:18.544"/>
+<status status="PASS" starttime="20220219 09:21:20.501" endtime="20220219 09:21:21.634"/>
 </kw>
 <kw name="Scroll To Page" library="check-availability-product">
 <for flavor="IN RANGE">
@@ -174,24 +174,24 @@
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:18.555" level="INFO">${SCROLL_HIEGHT} = 2500</msg>
-<status status="PASS" starttime="20220219 07:58:18.553" endtime="20220219 07:58:18.555"/>
+<msg timestamp="20220219 09:21:21.645" level="INFO">${SCROLL_HIEGHT} = 2000</msg>
+<status status="PASS" starttime="20220219 09:21:21.643" endtime="20220219 09:21:21.645"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:18.977" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:18.555" endtime="20220219 07:58:18.977"/>
+<msg timestamp="20220219 09:21:22.059" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:21.645" endtime="20220219 09:21:22.060"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:18.993" level="INFO">Executing JavaScript:
-window.scrollTo(0, 2500)
+<msg timestamp="20220219 09:21:22.069" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:18.981" endtime="20220219 07:58:19.002"/>
+<status status="PASS" starttime="20220219 09:21:22.060" endtime="20220219 09:21:22.118"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:18.552" endtime="20220219 07:58:19.002"/>
+<status status="PASS" starttime="20220219 09:21:21.641" endtime="20220219 09:21:22.118"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -199,24 +199,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:19.002" level="INFO">${SCROLL_HIEGHT} = 3000</msg>
-<status status="PASS" starttime="20220219 07:58:19.002" endtime="20220219 07:58:19.002"/>
+<msg timestamp="20220219 09:21:22.118" level="INFO">${SCROLL_HIEGHT} = 2500</msg>
+<status status="PASS" starttime="20220219 09:21:22.118" endtime="20220219 09:21:22.119"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:19.411" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:19.002" endtime="20220219 07:58:19.411"/>
+<msg timestamp="20220219 09:21:22.525" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:22.119" endtime="20220219 09:21:22.528"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:19.412" level="INFO">Executing JavaScript:
-window.scrollTo(0, 3000)
+<msg timestamp="20220219 09:21:22.530" level="INFO">Executing JavaScript:
+window.scrollTo(0, 2500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:19.411" endtime="20220219 07:58:19.665"/>
+<status status="PASS" starttime="20220219 09:21:22.528" endtime="20220219 09:21:24.015"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:19.002" endtime="20220219 07:58:19.665"/>
+<status status="PASS" starttime="20220219 09:21:22.118" endtime="20220219 09:21:24.015"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -224,24 +224,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:19.665" level="INFO">${SCROLL_HIEGHT} = 3500</msg>
-<status status="PASS" starttime="20220219 07:58:19.665" endtime="20220219 07:58:19.665"/>
+<msg timestamp="20220219 09:21:24.016" level="INFO">${SCROLL_HIEGHT} = 3000</msg>
+<status status="PASS" starttime="20220219 09:21:24.015" endtime="20220219 09:21:24.016"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:20.072" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:19.665" endtime="20220219 07:58:20.072"/>
+<msg timestamp="20220219 09:21:24.425" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:24.016" endtime="20220219 09:21:24.426"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:20.074" level="INFO">Executing JavaScript:
-window.scrollTo(0, 3500)
+<msg timestamp="20220219 09:21:24.433" level="INFO">Executing JavaScript:
+window.scrollTo(0, 3000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:20.072" endtime="20220219 07:58:20.760"/>
+<status status="PASS" starttime="20220219 09:21:24.429" endtime="20220219 09:21:25.673"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:19.665" endtime="20220219 07:58:20.760"/>
+<status status="PASS" starttime="20220219 09:21:24.015" endtime="20220219 09:21:25.673"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -249,24 +249,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:20.772" level="INFO">${SCROLL_HIEGHT} = 4000</msg>
-<status status="PASS" starttime="20220219 07:58:20.771" endtime="20220219 07:58:20.772"/>
+<msg timestamp="20220219 09:21:25.675" level="INFO">${SCROLL_HIEGHT} = 3500</msg>
+<status status="PASS" starttime="20220219 09:21:25.674" endtime="20220219 09:21:25.675"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:21.181" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:20.772" endtime="20220219 07:58:21.181"/>
+<msg timestamp="20220219 09:21:26.079" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:25.675" endtime="20220219 09:21:26.080"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:21.182" level="INFO">Executing JavaScript:
-window.scrollTo(0, 4000)
+<msg timestamp="20220219 09:21:26.082" level="INFO">Executing JavaScript:
+window.scrollTo(0, 3500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:21.181" endtime="20220219 07:58:21.196"/>
+<status status="PASS" starttime="20220219 09:21:26.080" endtime="20220219 09:21:26.145"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:20.770" endtime="20220219 07:58:21.196"/>
+<status status="PASS" starttime="20220219 09:21:25.674" endtime="20220219 09:21:26.145"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -274,24 +274,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:21.196" level="INFO">${SCROLL_HIEGHT} = 4500</msg>
-<status status="PASS" starttime="20220219 07:58:21.196" endtime="20220219 07:58:21.196"/>
+<msg timestamp="20220219 09:21:26.146" level="INFO">${SCROLL_HIEGHT} = 4000</msg>
+<status status="PASS" starttime="20220219 09:21:26.146" endtime="20220219 09:21:26.146"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:21.602" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:21.196" endtime="20220219 07:58:21.602"/>
+<msg timestamp="20220219 09:21:26.557" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:26.147" endtime="20220219 09:21:26.558"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:21.608" level="INFO">Executing JavaScript:
-window.scrollTo(0, 4500)
+<msg timestamp="20220219 09:21:26.566" level="INFO">Executing JavaScript:
+window.scrollTo(0, 4000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:21.604" endtime="20220219 07:58:21.929"/>
+<status status="PASS" starttime="20220219 09:21:26.559" endtime="20220219 09:21:27.428"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:21.196" endtime="20220219 07:58:21.930"/>
+<status status="PASS" starttime="20220219 09:21:26.146" endtime="20220219 09:21:27.429"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -299,24 +299,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:21.930" level="INFO">${SCROLL_HIEGHT} = 5000</msg>
-<status status="PASS" starttime="20220219 07:58:21.930" endtime="20220219 07:58:21.930"/>
+<msg timestamp="20220219 09:21:27.434" level="INFO">${SCROLL_HIEGHT} = 4500</msg>
+<status status="PASS" starttime="20220219 09:21:27.430" endtime="20220219 09:21:27.434"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:22.346" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:21.930" endtime="20220219 07:58:22.346"/>
+<msg timestamp="20220219 09:21:27.837" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:27.434" endtime="20220219 09:21:27.840"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:22.348" level="INFO">Executing JavaScript:
-window.scrollTo(0, 5000)
+<msg timestamp="20220219 09:21:27.846" level="INFO">Executing JavaScript:
+window.scrollTo(0, 4500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:22.346" endtime="20220219 07:58:22.558"/>
+<status status="PASS" starttime="20220219 09:21:27.842" endtime="20220219 09:21:28.754"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:21.930" endtime="20220219 07:58:22.564"/>
+<status status="PASS" starttime="20220219 09:21:27.429" endtime="20220219 09:21:28.756"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -324,24 +324,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:22.572" level="INFO">${SCROLL_HIEGHT} = 5500</msg>
-<status status="PASS" starttime="20220219 07:58:22.572" endtime="20220219 07:58:22.573"/>
+<msg timestamp="20220219 09:21:28.758" level="INFO">${SCROLL_HIEGHT} = 5000</msg>
+<status status="PASS" starttime="20220219 09:21:28.758" endtime="20220219 09:21:28.758"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:22.981" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:22.573" endtime="20220219 07:58:22.981"/>
+<msg timestamp="20220219 09:21:29.169" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:28.758" endtime="20220219 09:21:29.169"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:22.984" level="INFO">Executing JavaScript:
-window.scrollTo(0, 5500)
+<msg timestamp="20220219 09:21:29.170" level="INFO">Executing JavaScript:
+window.scrollTo(0, 5000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:22.981" endtime="20220219 07:58:23.061"/>
+<status status="PASS" starttime="20220219 09:21:29.169" endtime="20220219 09:21:29.187"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:22.571" endtime="20220219 07:58:23.061"/>
+<status status="PASS" starttime="20220219 09:21:28.757" endtime="20220219 09:21:29.187"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -349,24 +349,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:23.065" level="INFO">${SCROLL_HIEGHT} = 6000</msg>
-<status status="PASS" starttime="20220219 07:58:23.064" endtime="20220219 07:58:23.065"/>
+<msg timestamp="20220219 09:21:29.187" level="INFO">${SCROLL_HIEGHT} = 5500</msg>
+<status status="PASS" starttime="20220219 09:21:29.187" endtime="20220219 09:21:29.188"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:23.476" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:23.065" endtime="20220219 07:58:23.476"/>
+<msg timestamp="20220219 09:21:29.601" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:29.188" endtime="20220219 09:21:29.602"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:23.478" level="INFO">Executing JavaScript:
-window.scrollTo(0, 6000)
+<msg timestamp="20220219 09:21:29.614" level="INFO">Executing JavaScript:
+window.scrollTo(0, 5500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:23.477" endtime="20220219 07:58:23.663"/>
+<status status="PASS" starttime="20220219 09:21:29.604" endtime="20220219 09:21:29.994"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:23.061" endtime="20220219 07:58:23.663"/>
+<status status="PASS" starttime="20220219 09:21:29.187" endtime="20220219 09:21:29.994"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -374,24 +374,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:23.663" level="INFO">${SCROLL_HIEGHT} = 6500</msg>
-<status status="PASS" starttime="20220219 07:58:23.663" endtime="20220219 07:58:23.663"/>
+<msg timestamp="20220219 09:21:29.995" level="INFO">${SCROLL_HIEGHT} = 6000</msg>
+<status status="PASS" starttime="20220219 09:21:29.994" endtime="20220219 09:21:29.995"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:24.067" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:23.664" endtime="20220219 07:58:24.067"/>
+<msg timestamp="20220219 09:21:30.402" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:29.995" endtime="20220219 09:21:30.403"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:24.070" level="INFO">Executing JavaScript:
-window.scrollTo(0, 6500)
+<msg timestamp="20220219 09:21:30.413" level="INFO">Executing JavaScript:
+window.scrollTo(0, 6000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:24.067" endtime="20220219 07:58:24.076"/>
+<status status="PASS" starttime="20220219 09:21:30.405" endtime="20220219 09:21:30.738"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:23.663" endtime="20220219 07:58:24.076"/>
+<status status="PASS" starttime="20220219 09:21:29.994" endtime="20220219 09:21:30.738"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -399,24 +399,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:24.077" level="INFO">${SCROLL_HIEGHT} = 7000</msg>
-<status status="PASS" starttime="20220219 07:58:24.077" endtime="20220219 07:58:24.077"/>
+<msg timestamp="20220219 09:21:30.738" level="INFO">${SCROLL_HIEGHT} = 6500</msg>
+<status status="PASS" starttime="20220219 09:21:30.738" endtime="20220219 09:21:30.738"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:24.533" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:24.120" endtime="20220219 07:58:24.535"/>
+<msg timestamp="20220219 09:21:31.149" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:30.739" endtime="20220219 09:21:31.150"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:24.535" level="INFO">Executing JavaScript:
-window.scrollTo(0, 7000)
+<msg timestamp="20220219 09:21:31.171" level="INFO">Executing JavaScript:
+window.scrollTo(0, 6500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:24.535" endtime="20220219 07:58:25.029"/>
+<status status="PASS" starttime="20220219 09:21:31.152" endtime="20220219 09:21:31.893"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:24.077" endtime="20220219 07:58:25.029"/>
+<status status="PASS" starttime="20220219 09:21:30.738" endtime="20220219 09:21:31.894"/>
 </iter>
 <iter>
 <var name="${i}">10</var>
@@ -424,24 +424,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:25.029" level="INFO">${SCROLL_HIEGHT} = 7500</msg>
-<status status="PASS" starttime="20220219 07:58:25.029" endtime="20220219 07:58:25.029"/>
+<msg timestamp="20220219 09:21:31.898" level="INFO">${SCROLL_HIEGHT} = 7000</msg>
+<status status="PASS" starttime="20220219 09:21:31.895" endtime="20220219 09:21:31.898"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:25.440" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:25.032" endtime="20220219 07:58:25.441"/>
+<msg timestamp="20220219 09:21:32.303" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:31.899" endtime="20220219 09:21:32.305"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:25.442" level="INFO">Executing JavaScript:
-window.scrollTo(0, 7500)
+<msg timestamp="20220219 09:21:32.307" level="INFO">Executing JavaScript:
+window.scrollTo(0, 7000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:25.441" endtime="20220219 07:58:25.456"/>
+<status status="PASS" starttime="20220219 09:21:32.306" endtime="20220219 09:21:33.623"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:25.029" endtime="20220219 07:58:25.457"/>
+<status status="PASS" starttime="20220219 09:21:31.894" endtime="20220219 09:21:33.623"/>
 </iter>
 <iter>
 <var name="${i}">11</var>
@@ -449,24 +449,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:25.458" level="INFO">${SCROLL_HIEGHT} = 8000</msg>
-<status status="PASS" starttime="20220219 07:58:25.457" endtime="20220219 07:58:25.458"/>
+<msg timestamp="20220219 09:21:33.624" level="INFO">${SCROLL_HIEGHT} = 7500</msg>
+<status status="PASS" starttime="20220219 09:21:33.624" endtime="20220219 09:21:33.624"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:25.859" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:25.458" endtime="20220219 07:58:25.859"/>
+<msg timestamp="20220219 09:21:34.037" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:33.624" endtime="20220219 09:21:34.037"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:25.860" level="INFO">Executing JavaScript:
-window.scrollTo(0, 8000)
+<msg timestamp="20220219 09:21:34.041" level="INFO">Executing JavaScript:
+window.scrollTo(0, 7500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:25.859" endtime="20220219 07:58:25.873"/>
+<status status="PASS" starttime="20220219 09:21:34.039" endtime="20220219 09:21:34.053"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:25.457" endtime="20220219 07:58:25.873"/>
+<status status="PASS" starttime="20220219 09:21:33.623" endtime="20220219 09:21:34.053"/>
 </iter>
 <iter>
 <var name="${i}">12</var>
@@ -474,24 +474,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:25.874" level="INFO">${SCROLL_HIEGHT} = 8500</msg>
-<status status="PASS" starttime="20220219 07:58:25.874" endtime="20220219 07:58:25.874"/>
+<msg timestamp="20220219 09:21:34.054" level="INFO">${SCROLL_HIEGHT} = 8000</msg>
+<status status="PASS" starttime="20220219 09:21:34.054" endtime="20220219 09:21:34.054"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:26.281" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:25.874" endtime="20220219 07:58:26.282"/>
+<msg timestamp="20220219 09:21:34.470" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:34.054" endtime="20220219 09:21:34.470"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:26.284" level="INFO">Executing JavaScript:
-window.scrollTo(0, 8500)
+<msg timestamp="20220219 09:21:34.477" level="INFO">Executing JavaScript:
+window.scrollTo(0, 8000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:26.283" endtime="20220219 07:58:26.292"/>
+<status status="PASS" starttime="20220219 09:21:34.472" endtime="20220219 09:21:34.689"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:25.873" endtime="20220219 07:58:26.292"/>
+<status status="PASS" starttime="20220219 09:21:34.053" endtime="20220219 09:21:34.689"/>
 </iter>
 <iter>
 <var name="${i}">13</var>
@@ -499,24 +499,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:26.293" level="INFO">${SCROLL_HIEGHT} = 9000</msg>
-<status status="PASS" starttime="20220219 07:58:26.292" endtime="20220219 07:58:26.293"/>
+<msg timestamp="20220219 09:21:34.689" level="INFO">${SCROLL_HIEGHT} = 8500</msg>
+<status status="PASS" starttime="20220219 09:21:34.689" endtime="20220219 09:21:34.689"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:26.697" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:26.293" endtime="20220219 07:58:26.698"/>
+<msg timestamp="20220219 09:21:35.100" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:34.689" endtime="20220219 09:21:35.100"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:26.701" level="INFO">Executing JavaScript:
-window.scrollTo(0, 9000)
+<msg timestamp="20220219 09:21:35.101" level="INFO">Executing JavaScript:
+window.scrollTo(0, 8500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:26.699" endtime="20220219 07:58:26.759"/>
+<status status="PASS" starttime="20220219 09:21:35.101" endtime="20220219 09:21:35.322"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:26.292" endtime="20220219 07:58:26.759"/>
+<status status="PASS" starttime="20220219 09:21:34.689" endtime="20220219 09:21:35.322"/>
 </iter>
 <iter>
 <var name="${i}">14</var>
@@ -524,24 +524,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:26.760" level="INFO">${SCROLL_HIEGHT} = 9500</msg>
-<status status="PASS" starttime="20220219 07:58:26.759" endtime="20220219 07:58:26.760"/>
+<msg timestamp="20220219 09:21:35.322" level="INFO">${SCROLL_HIEGHT} = 9000</msg>
+<status status="PASS" starttime="20220219 09:21:35.322" endtime="20220219 09:21:35.323"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:27.177" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:26.760" endtime="20220219 07:58:27.177"/>
+<msg timestamp="20220219 09:21:35.733" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:35.323" endtime="20220219 09:21:35.735"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:27.181" level="INFO">Executing JavaScript:
-window.scrollTo(0, 9500)
+<msg timestamp="20220219 09:21:35.741" level="INFO">Executing JavaScript:
+window.scrollTo(0, 9000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:27.177" endtime="20220219 07:58:27.185"/>
+<status status="PASS" starttime="20220219 09:21:35.735" endtime="20220219 09:21:35.808"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:26.759" endtime="20220219 07:58:27.185"/>
+<status status="PASS" starttime="20220219 09:21:35.322" endtime="20220219 09:21:35.808"/>
 </iter>
 <iter>
 <var name="${i}">15</var>
@@ -549,24 +549,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:27.185" level="INFO">${SCROLL_HIEGHT} = 10000</msg>
-<status status="PASS" starttime="20220219 07:58:27.185" endtime="20220219 07:58:27.185"/>
+<msg timestamp="20220219 09:21:35.857" level="INFO">${SCROLL_HIEGHT} = 9500</msg>
+<status status="PASS" starttime="20220219 09:21:35.857" endtime="20220219 09:21:35.857"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:27.598" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:27.185" endtime="20220219 07:58:27.598"/>
+<msg timestamp="20220219 09:21:36.279" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:35.857" endtime="20220219 09:21:36.279"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:27.601" level="INFO">Executing JavaScript:
-window.scrollTo(0, 10000)
+<msg timestamp="20220219 09:21:36.284" level="INFO">Executing JavaScript:
+window.scrollTo(0, 9500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:27.598" endtime="20220219 07:58:27.623"/>
+<status status="PASS" starttime="20220219 09:21:36.279" endtime="20220219 09:21:36.294"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:27.185" endtime="20220219 07:58:27.623"/>
+<status status="PASS" starttime="20220219 09:21:35.809" endtime="20220219 09:21:36.294"/>
 </iter>
 <iter>
 <var name="${i}">16</var>
@@ -574,24 +574,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:27.627" level="INFO">${SCROLL_HIEGHT} = 10500</msg>
-<status status="PASS" starttime="20220219 07:58:27.626" endtime="20220219 07:58:27.627"/>
+<msg timestamp="20220219 09:21:36.303" level="INFO">${SCROLL_HIEGHT} = 10000</msg>
+<status status="PASS" starttime="20220219 09:21:36.295" endtime="20220219 09:21:36.303"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:28.039" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:27.627" endtime="20220219 07:58:28.039"/>
+<msg timestamp="20220219 09:21:36.716" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:36.304" endtime="20220219 09:21:36.717"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:28.039" level="INFO">Executing JavaScript:
-window.scrollTo(0, 10500)
+<msg timestamp="20220219 09:21:36.720" level="INFO">Executing JavaScript:
+window.scrollTo(0, 10000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:28.039" endtime="20220219 07:58:28.053"/>
+<status status="PASS" starttime="20220219 09:21:36.718" endtime="20220219 09:21:36.754"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:27.626" endtime="20220219 07:58:28.053"/>
+<status status="PASS" starttime="20220219 09:21:36.295" endtime="20220219 09:21:36.754"/>
 </iter>
 <iter>
 <var name="${i}">17</var>
@@ -599,24 +599,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:28.054" level="INFO">${SCROLL_HIEGHT} = 11000</msg>
-<status status="PASS" starttime="20220219 07:58:28.054" endtime="20220219 07:58:28.054"/>
+<msg timestamp="20220219 09:21:36.755" level="INFO">${SCROLL_HIEGHT} = 10500</msg>
+<status status="PASS" starttime="20220219 09:21:36.755" endtime="20220219 09:21:36.755"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:28.464" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:28.054" endtime="20220219 07:58:28.464"/>
+<msg timestamp="20220219 09:21:37.178" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:36.755" endtime="20220219 09:21:37.178"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:28.464" level="INFO">Executing JavaScript:
-window.scrollTo(0, 11000)
+<msg timestamp="20220219 09:21:37.200" level="INFO">Executing JavaScript:
+window.scrollTo(0, 10500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:28.464" endtime="20220219 07:58:28.468"/>
+<status status="PASS" starttime="20220219 09:21:37.188" endtime="20220219 09:21:37.284"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:28.054" endtime="20220219 07:58:28.468"/>
+<status status="PASS" starttime="20220219 09:21:36.755" endtime="20220219 09:21:37.284"/>
 </iter>
 <iter>
 <var name="${i}">18</var>
@@ -624,24 +624,24 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:28.472" level="INFO">${SCROLL_HIEGHT} = 11500</msg>
-<status status="PASS" starttime="20220219 07:58:28.472" endtime="20220219 07:58:28.472"/>
+<msg timestamp="20220219 09:21:37.284" level="INFO">${SCROLL_HIEGHT} = 11000</msg>
+<status status="PASS" starttime="20220219 09:21:37.284" endtime="20220219 09:21:37.284"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:28.880" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:28.472" endtime="20220219 07:58:28.880"/>
+<msg timestamp="20220219 09:21:37.700" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:37.286" endtime="20220219 09:21:37.702"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:28.909" level="INFO">Executing JavaScript:
-window.scrollTo(0, 11500)
+<msg timestamp="20220219 09:21:37.707" level="INFO">Executing JavaScript:
+window.scrollTo(0, 11000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:28.880" endtime="20220219 07:58:28.921"/>
+<status status="PASS" starttime="20220219 09:21:37.703" endtime="20220219 09:21:37.946"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:28.472" endtime="20220219 07:58:28.921"/>
+<status status="PASS" starttime="20220219 09:21:37.284" endtime="20220219 09:21:37.946"/>
 </iter>
 <iter>
 <var name="${i}">19</var>
@@ -649,53 +649,53 @@ Without any arguments.</msg>
 <var>${SCROLL_HIEGHT}</var>
 <arg>${SCROLL_HIEGHT}+500</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220219 07:58:28.921" level="INFO">${SCROLL_HIEGHT} = 12000</msg>
-<status status="PASS" starttime="20220219 07:58:28.921" endtime="20220219 07:58:28.921"/>
+<msg timestamp="20220219 09:21:37.946" level="INFO">${SCROLL_HIEGHT} = 11500</msg>
+<status status="PASS" starttime="20220219 09:21:37.946" endtime="20220219 09:21:37.946"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>.4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220219 07:58:29.332" level="INFO">Slept 400 milliseconds</msg>
-<status status="PASS" starttime="20220219 07:58:28.921" endtime="20220219 07:58:29.332"/>
+<msg timestamp="20220219 09:21:38.362" level="INFO">Slept 400 milliseconds</msg>
+<status status="PASS" starttime="20220219 09:21:37.947" endtime="20220219 09:21:38.363"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0, ${SCROLL_HIEGHT})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:29.363" level="INFO">Executing JavaScript:
-window.scrollTo(0, 12000)
+<msg timestamp="20220219 09:21:38.365" level="INFO">Executing JavaScript:
+window.scrollTo(0, 11500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:29.332" endtime="20220219 07:58:29.367"/>
+<status status="PASS" starttime="20220219 09:21:38.363" endtime="20220219 09:21:38.370"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:28.921" endtime="20220219 07:58:29.367"/>
+<status status="PASS" starttime="20220219 09:21:37.946" endtime="20220219 09:21:38.370"/>
 </iter>
-<status status="PASS" starttime="20220219 07:58:18.550" endtime="20220219 07:58:29.367"/>
+<status status="PASS" starttime="20220219 09:21:21.638" endtime="20220219 09:21:38.370"/>
 </for>
-<status status="PASS" starttime="20220219 07:58:18.544" endtime="20220219 07:58:29.367"/>
+<status status="PASS" starttime="20220219 09:21:21.635" endtime="20220219 09:21:38.370"/>
 </kw>
 <kw name="Scroll To Next Page" library="check-availability-product">
 <kw name="Get Horizontal Position" library="SeleniumLibrary">
 <var>${x}</var>
 <arg>${NextPage}</arg>
 <doc>Returns the horizontal position of the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:29.394" level="INFO">${x} = 540</msg>
-<status status="PASS" starttime="20220219 07:58:29.371" endtime="20220219 07:58:29.394"/>
+<msg timestamp="20220219 09:21:38.394" level="INFO">${x} = 540</msg>
+<status status="PASS" starttime="20220219 09:21:38.371" endtime="20220219 09:21:38.394"/>
 </kw>
 <kw name="Get Vertical Position" library="SeleniumLibrary">
 <var>${y}</var>
 <arg>${NextPage}</arg>
 <doc>Returns the vertical position of the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:29.406" level="INFO">${y} = 8745</msg>
-<status status="PASS" starttime="20220219 07:58:29.394" endtime="20220219 07:58:29.406"/>
+<msg timestamp="20220219 09:21:38.412" level="INFO">${y} = 8745</msg>
+<status status="PASS" starttime="20220219 09:21:38.395" endtime="20220219 09:21:38.412"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(${x}, ${y})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220219 07:58:29.406" level="INFO">Executing JavaScript:
+<msg timestamp="20220219 09:21:38.413" level="INFO">Executing JavaScript:
 window.scrollTo(540, 8745)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220219 07:58:29.406" endtime="20220219 07:58:29.413"/>
+<status status="PASS" starttime="20220219 09:21:38.412" endtime="20220219 09:21:38.416"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:29.371" endtime="20220219 07:58:29.413"/>
+<status status="PASS" starttime="20220219 09:21:38.370" endtime="20220219 09:21:38.416"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>10s</arg>
@@ -706,13 +706,13 @@ Without any arguments.</msg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${NextPage}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:29.413" level="INFO">Clicking element 'xpath://*[@id="plpLayoutContainer"]/section[1]/div[2]/div[2]/div[2]/span[4]'.</msg>
+<msg timestamp="20220219 09:21:38.417" level="INFO">Clicking element 'xpath://*[@id="plpLayoutContainer"]/section[1]/div[2]/div[2]/div[2]/span[4]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220219 07:58:29.607" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-182.png"&gt;&lt;img src="selenium-screenshot-182.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220219 07:58:29.432" endtime="20220219 07:58:29.607"/>
+<msg timestamp="20220219 09:21:38.689" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220219 09:21:38.447" endtime="20220219 09:21:38.689"/>
 </kw>
-<msg timestamp="20220219 07:58:29.631" level="FAIL">ElementNotInteractableException: Message: Element &lt;span class="d-flex w-9 h-9 jc-center ai-center radius-circle m-1 text-body2-strong pointer !hover:border border-r-700 pointer PageNumberButton_PageNumberButton__b455s" type="button"&gt; could not be scrolled into view
+<msg timestamp="20220219 09:21:38.718" level="FAIL">ElementNotInteractableException: Message: Element &lt;span class="d-flex w-9 h-9 jc-center ai-center radius-circle m-1 text-body2-strong pointer !hover:border border-r-700 pointer PageNumberButton_PageNumberButton__b455s" type="button"&gt; could not be scrolled into view
 Stacktrace:
 WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5
 ElementNotInteractableError@chrome://remote/content/shared/webdriver/Errors.jsm:293:5
@@ -721,62 +721,62 @@ interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:1
 clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:203:24
 receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:91:31
 </msg>
-<status status="FAIL" starttime="20220219 07:58:29.413" endtime="20220219 07:58:29.631"/>
+<status status="FAIL" starttime="20220219 09:21:38.417" endtime="20220219 09:21:38.718"/>
 </kw>
-<status status="FAIL" starttime="20220219 07:58:29.413" endtime="20220219 07:58:29.635"/>
+<status status="FAIL" starttime="20220219 09:21:38.417" endtime="20220219 09:21:38.718"/>
 </kw>
 <kw name="Click Next Page" library="check-availability-product">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${NextPage}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:32.648" level="INFO">Clicking element 'xpath://*[@id="plpLayoutContainer"]/section[1]/div[2]/div[2]/div[2]/span[4]'.</msg>
-<status status="PASS" starttime="20220219 07:58:32.648" endtime="20220219 07:58:33.145"/>
+<msg timestamp="20220219 09:21:41.728" level="INFO">Clicking element 'xpath://*[@id="plpLayoutContainer"]/section[1]/div[2]/div[2]/div[2]/span[4]'.</msg>
+<status status="PASS" starttime="20220219 09:21:41.728" endtime="20220219 09:21:42.277"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:32.648" endtime="20220219 07:58:33.145"/>
+<status status="PASS" starttime="20220219 09:21:41.728" endtime="20220219 09:21:42.278"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:29.413" endtime="20220219 07:58:33.145"/>
+<status status="PASS" starttime="20220219 09:21:38.416" endtime="20220219 09:21:42.278"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${BestSelling}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:33.145" endtime="20220219 07:58:33.762"/>
+<status status="PASS" starttime="20220219 09:21:42.278" endtime="20220219 09:21:43.440"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${ChooseMobile}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:33.762" endtime="20220219 07:58:33.815"/>
+<status status="PASS" starttime="20220219 09:21:43.440" endtime="20220219 09:21:43.499"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${ChooseMobile}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:33.816" level="INFO">Clicking element 'xpath://html/body/div[1]/div[1]/div[3]/div[3]/div[1]/div/section[1]/div[2]/div[1]/div/div[2]/article/a/div[2]/div[2]/div[2]/h2'.</msg>
-<status status="PASS" starttime="20220219 07:58:33.815" endtime="20220219 07:58:34.163"/>
+<msg timestamp="20220219 09:21:43.500" level="INFO">Clicking element 'xpath://html/body/div[1]/div[1]/div[3]/div[3]/div[1]/div/section[1]/div[2]/div[1]/div/div[2]/article/a/div[2]/div[2]/div[2]/h2'.</msg>
+<status status="PASS" starttime="20220219 09:21:43.499" endtime="20220219 09:21:43.796"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>New</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220219 07:58:34.163" endtime="20220219 07:58:34.185"/>
+<status status="PASS" starttime="20220219 09:21:43.796" endtime="20220219 09:21:44.007"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${VisibleMobile}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:34.186" endtime="20220219 07:58:37.263"/>
+<status status="PASS" starttime="20220219 09:21:44.008" endtime="20220219 09:21:49.728"/>
 </kw>
 <kw name="Set Focus To Element" library="SeleniumLibrary">
 <arg>${NoticesButton}</arg>
 <doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220219 07:58:37.263" endtime="20220219 07:58:37.478"/>
+<status status="PASS" starttime="20220219 09:21:49.730" endtime="20220219 09:21:50.639"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${NoticesButton}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:37.478" level="INFO">Clicking button 'xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20220219 07:58:37.478" endtime="20220219 07:58:38.049"/>
+<msg timestamp="20220219 09:21:50.639" level="INFO">Clicking button 'xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20220219 09:21:50.639" endtime="20220219 09:21:52.306"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Record}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:38.049" endtime="20220219 07:58:38.566"/>
+<status status="PASS" starttime="20220219 09:21:52.306" endtime="20220219 09:21:52.399"/>
 </kw>
 <kw name="Checked Checkbox" library="check-availability-product">
 <kw name="Run Keyword And Return Status" library="BuiltIn">
@@ -787,20 +787,20 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 <kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
 <arg>${NPMessage}</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20220219 07:58:38.575" level="INFO">Verifying checkbox 'name:sendNotification' is not selected.</msg>
-<status status="PASS" starttime="20220219 07:58:38.574" endtime="20220219 07:58:38.613"/>
+<msg timestamp="20220219 09:21:52.402" level="INFO">Verifying checkbox 'name:sendNotification' is not selected.</msg>
+<status status="PASS" starttime="20220219 09:21:52.401" endtime="20220219 09:21:52.701"/>
 </kw>
-<msg timestamp="20220219 07:58:38.613" level="INFO">${confirm} = True</msg>
-<status status="PASS" starttime="20220219 07:58:38.570" endtime="20220219 07:58:38.613"/>
+<msg timestamp="20220219 09:21:52.701" level="INFO">${confirm} = True</msg>
+<status status="PASS" starttime="20220219 09:21:52.401" endtime="20220219 09:21:52.701"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${IsChecked}</arg>
 <arg>${confirm}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220219 07:58:38.622" level="INFO">${IsChecked} = True</msg>
-<status status="PASS" starttime="20220219 07:58:38.613" endtime="20220219 07:58:38.622"/>
+<msg timestamp="20220219 09:21:52.711" level="INFO">${IsChecked} = True</msg>
+<status status="PASS" starttime="20220219 09:21:52.702" endtime="20220219 09:21:52.711"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:38.566" endtime="20220219 07:58:38.623"/>
+<status status="PASS" starttime="20220219 09:21:52.399" endtime="20220219 09:21:52.712"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${IsChecked}</arg>
@@ -810,31 +810,35 @@ receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${PMessage}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:38.624" level="INFO">Clicking element 'xpath://*[@id="modal-root"]/div[20]/div/div/div/div[2]/div/form/label[2]/label/span'.</msg>
-<status status="PASS" starttime="20220219 07:58:38.624" endtime="20220219 07:58:38.869"/>
+<msg timestamp="20220219 09:21:52.714" level="INFO">Clicking element 'xpath://*[@id="modal-root"]/div[20]/div/div/div/div[2]/div/form/label[2]/label/span'.</msg>
+<status status="PASS" starttime="20220219 09:21:52.714" endtime="20220219 09:21:52.985"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:38.624" endtime="20220219 07:58:38.871"/>
+<status status="PASS" starttime="20220219 09:21:52.713" endtime="20220219 09:21:52.985"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:38.623" endtime="20220219 07:58:38.871"/>
+<status status="PASS" starttime="20220219 09:21:52.713" endtime="20220219 09:21:52.985"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Record}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220219 07:58:38.872" level="INFO">Clicking button 'xpath://html/body/div[2]/div[2]/div[20]/div/div/div/div[2]/div/form/div/button'.</msg>
-<status status="PASS" starttime="20220219 07:58:38.871" endtime="20220219 07:58:39.160"/>
+<msg timestamp="20220219 09:21:52.986" level="INFO">Clicking button 'xpath://html/body/div[2]/div[2]/div[20]/div/div/div/div[2]/div/form/div/button'.</msg>
+<status status="PASS" starttime="20220219 09:21:52.985" endtime="20220219 09:21:53.650"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${EndNotice}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220219 07:58:39.160" endtime="20220219 07:58:39.228"/>
+<status status="PASS" starttime="20220219 09:21:53.650" endtime="20220219 09:21:54.267"/>
 </kw>
-<status status="PASS" starttime="20220219 07:58:15.016" endtime="20220219 07:58:39.228"/>
+<status status="PASS" starttime="20220219 09:21:14.803" endtime="20220219 09:21:54.267"/>
 </kw>
 <tag>Availability</tag>
-<status status="PASS" starttime="20220219 07:58:14.978" endtime="20220219 07:58:39.246"/>
+<status status="PASS" starttime="20220219 09:21:14.795" endtime="20220219 09:21:54.291"/>
 </test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220219 09:21:54.301" endtime="20220219 09:21:56.127"/>
+</kw>
 <doc>A Test Suite For Availibility Product</doc>
-<status status="PASS" starttime="20220219 07:55:56.578" endtime="20220219 07:58:39.264"/>
+<status status="PASS" starttime="20220219 09:20:48.177" endtime="20220219 09:21:56.128"/>
 </suite>
 <statistics>
 <total>
