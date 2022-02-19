@@ -5,7 +5,7 @@ Resource       common.robot
 Resource       Variables.robot
 
 ***Variables***
-${ChooseMobile}     xpath://html/body/div[1]/div[1]/div[3]/div[3]/div[1]/div/section[1]/div[2]/div[1]/div/div[2]/article/a/div[2]/div[2]/div[2]/h2
+${ChooseMobile}     xpath://html/body/div[1]/div[1]/div[3]/div[3]/div[1]/div[2]/section[1]/div[2]/div[1]/div/div[2]/article/a/div[2]/div[1]/div/div/div/div
 ${NoticesButton}    xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button
 ${PMessage}         xpath://*[@id="modal-root"]/div[20]/div/div/div/div[2]/div/form/label[2]/label/span 
 ${Record}           xpath://html/body/div[2]/div[2]/div[20]/div/div/div/div[2]/div/form/div/button
@@ -28,10 +28,12 @@ Select Product
     Click Element  ${BestSelling}
     Wait Until Element Is Visible   ${Filters}
     Scroll To Page
-    Scroll To Next Page
+    Scroll To View  ${NextPage}
     Wait Until Keyword Succeeds  10s  3s  Click Next Page
     Wait Until Element Is Visible  ${BestSelling}
+    Execute JavaScript   window.scrollBy(0,500)
     Wait Until Element Is Visible  ${ChooseMobile}
+    Set Focus To Element  ${ChooseMobile}
     Click Element  ${ChooseMobile}
     Switch Window   New
     Wait Until Element Is Visible  ${VisibleMobile}	
@@ -63,7 +65,3 @@ Click Apple Menu
 Click Next Page
     Click Element  ${NextPage}
 
-Scroll To Next Page
-    ${x}=  Get Horizontal Position  ${NextPage}
-    ${y}=  Get Vertical Position  ${NextPage}
-    Execute Javascript  window.scrollTo(${x}, ${y})

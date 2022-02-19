@@ -36,15 +36,15 @@ Choose Mobile To Buying
     Wait Until Element Is Visible  ${SellerCheckbox}
     Wait Until Keyword Succeeds  10s  3s  Click Checkbox
     Wait Until Element Is Visible  ${Filters}
-    Execute JavaScript   window.scrollBy(0,300)
+    Execute JavaScript   window.scrollBy(0,600)
     Wait Until Element Is Visible  ${Brand}
-    Click Element  ${Brand} 
+    Wait Until Keyword Succeeds  10s  3s  Click Brand
     Wait Until Element IS Visible  ${SelectApple} 
-    Click Element  ${SelectApple} 	
+    Wait Until Keyword Succeeds  10s  3s  Click Apple
     Wait Until Element IS Visible  ${BestSelling}
     Click Element  ${BestSelling}
     Wait Until Element Is Visible  ${Filters}
-    Execute JavaScript   window.scrollBy(0,700)
+    Execute JavaScript   window.scrollBy(0,900)
     Wait Until Element Is Visible  ${ChooseMobile}
     Wait Until Keyword Succeeds  10s  3s  Click Image Mobile
     Switch Window   New
@@ -62,10 +62,10 @@ Delete Product
     Set Focus To Element  ${ContinueBuy}
     Click Link  ${ContinueBuy}
     Wait Until Element Is Visible  ${Time}
-    Execute JavaScript  window.scrollBy(0, -document.body.scrollHeight)
+    scroll Up Page
     Wait Until Element Is Visible  ${Return}
     Wait Until Keyword Succeeds  10s  3s  Click Return
-    Execute JavaScript  window.scrollBy(0, -document.body.scrollHeight) 
+    scroll Up Page
     Wait Until Element Is Visible  ${Delete}
     Set Focus To Element  ${Delete}
     Click Button  ${Delete}
@@ -84,4 +84,10 @@ Click Seller
     Click Element  ${Seller}
 
 Click Checkbox
-    Click Element  ${SellerCheckbox}  
+    Click Element  ${SellerCheckbox}
+
+Click Brand  
+    Click Element  ${Brand}
+
+Click Apple
+    Click Element  ${SelectApple}

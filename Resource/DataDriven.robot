@@ -36,7 +36,7 @@ Select Jornal
     Wait Until Element Is Visible  ${Groupingh}
     Set Focus To Element  ${ChooseBook}
     Wait Until Keyword Succeeds  10s  3s  Choose Book Image
-    Execute JavaScript  window.scrollBy(0, -document.body.scrollHeight)	
+    scroll Up Page	
     Wait Until Element Is Visible  ${Jornals}   
     Click Element  ${Jornals}   
     Wait Until Element Is Visible  ${VisibleMagazine}  
@@ -45,10 +45,10 @@ Select Jornal
     Execute JavaScript   window.scrollBy(0,900)
     Wait Until Element Is Visible  ${CoverType}
     Wait Until Keyword Succeeds  10s  3s  Cover Type
-    Scroll To View Paper
+    Scroll To View  ${Galingor} 
     Wait Until Element Is Visible  ${paper}
     Click Element  ${paper}
-    Execute JavaScript  window.scrollBy(0, -document.body.scrollHeight)
+    scroll Up Page
     Wait Until Element Is Visible  ${quarterly}
     Set Focus To Element  ${quarterly}
     Click image  ${quarterly}
@@ -60,8 +60,3 @@ Choose Book Image
 
 Cover Type
     Click Element  ${CoverType}
-
-Scroll To View Paper
-    ${x}=  Get Horizontal Position  ${Galingor} 
-    ${y}=  Get Vertical Position  ${Galingor} 	
-    Execute Javascript  window.scrollTo(${x}, ${y}) 
